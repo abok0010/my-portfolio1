@@ -1,0 +1,392 @@
+/* Font Styles */
+@font-face {
+	font-family: Consola;
+	src: url(fonts/consola/consola.ttf);
+}
+/* ... Start NAV Styles ... */
+/* Global Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(22, 22, 22);
+	font-family: Arial, sans-serif;
+	color: #fff;
+	background-image: url(images/Home\ –\ 1.png);
+	background-size: cover;
+}
+header {
+	background-color: #2D3230;
+}
+.navbar {
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: -2px 10px 5px #00000073;
+}
+.nav-list {
+	list-style: none;
+	display: flex;
+	font-size: 30px;
+	margin-right: 152px;
+}
+img {
+	height: 90px;
+	margin-left: 120px;
+	margin-top: -8px;
+}
+.nav-list li:last-child a {
+	color: #E63B3B;
+}
+.nav-list li {
+	margin-top: 20px;
+	margin-left: 159px;
+	font-family: Consola;
+	font-weight: 500;
+}
+.nav-list li a {
+	text-decoration: none;
+	color: #fff;
+	transition-duration: 0.5s;
+}
+.nav-list li :hover {
+	color: #E63B3B;
+}
+.hamburger {
+	display: none;
+}
+.overlay {
+	display: none;
+}
+/* ... End Of Nav ... */
+.second{
+	font-size:50px;
+	color: rgb(230, 59, 59);
+	margin-left: 187px;
+	margin-top: 50px;
+}
+/* ... About Section ... */
+.about-sec{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.about-container{
+	display: flex;
+	flex-direction: row;
+	margin-left: 64px;
+}
+.me{
+	margin-top: 30px;
+	height: 553px;
+	width: auto;
+}
+.me-info{
+	margin-left: 50px;
+	font-size: 30px;
+	font-family: Consola;
+	width: 54%;
+	padding: 50px;
+}
+/* ... End of About Section ... */
+/* ... Skills Section ... */
+.skills{
+	padding:50px;
+}
+.sk-txt{
+	color: white;
+	font-size:48px;
+	margin-bottom: 40px;
+	margin-left:182px;
+	margin-top: 70px;
+}
+.skill-container {
+	background-color: white;
+	padding: 48px 45px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	/* Center items vertically */
+	border-radius: 15px;
+	width: 80%;
+}
+.html, .css, .js {
+	height: 155px;
+	width: 155px;
+	object-fit: contain;
+	margin-right: 110px;
+}
+/* ... End of Skills Section ... */
+/* ... Resume Section ... */
+.resume{
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 144px;
+	text-align: center;
+}
+.res{
+	font-size:40px;
+	color: #E63B3B;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.pls{
+	text-align: center;
+	font-size: 30px;
+	font-family: Consola;
+	margin-bottom: 30px;
+}
+/* ... End of Resume Section ... */
+/* ... Button Styles ... */
+.btn-resume {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 12px;
+	padding: 22px 75px;
+	font-size: 30px;
+	background-color: rgb(230, 59, 59);
+	color: white;
+	border: none;
+	margin-top: 20px;
+	font-family: Consola;
+	transition-duration: 0.5s;
+}
+.btn-resume:hover {
+	background-color: #ffffff;
+	color: #E63B3B;
+	cursor: pointer;
+}
+footer {
+	background-color: #41A1CA;
+	padding: 30px;
+	font-family: 'Consola';
+}
+@media only screen and (max-width: 768px) {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body {  
+
+            height: 100vh;
+            margin: 0;
+            background-color: #0e0f0f;
+            background-image: none;
+        
+        }
+        
+	/* Navbar Styles */
+	.navbar {
+		flex-direction: row-reverse;
+		color: #fff;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		box-shadow: -2px 10px 5px #00000073;
+	}
+	.nav-list {
+		display: none;
+	}
+	img {
+		margin-left: 10px;
+		height: 70px;
+		width: auto;
+		margin-top: -15px;
+	}
+	.hamburger {
+		display: block;
+		font-size: 30px;
+		font-weight: bolder;
+		color: #ffffff;
+		float: right;
+		margin-right: 20px;
+	}
+	.nav-list li {
+		margin: 0;
+		font-family: Consola;
+		font-weight: 500;
+	}
+	.nav-list li a {
+		color: #fff;
+		padding: 15px;
+		display: block;
+		transition-duration: 0.5s;
+	}
+	.nav-list li a:hover {
+		color: #E63B3B;
+	}
+	.overlay {
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.9);
+		overflow-y: hidden;
+		justify-content: center;
+	}
+	
+.hamburger:hover{
+	cursor: pointer;
+}
+	.overlay-content {
+		text-align: center;
+		margin-top: 50px;
+	}
+	.overlay a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 36px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+		margin: 15px;
+	}
+	a:last-child {
+		color: #E63B3B;
+	}
+	.overlay a:hover,.overlay a:focus {
+		color: #f1f1f1;
+	}
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+		color: #fff;
+		cursor: pointer;
+	}
+	/* End of Navbar Styles */
+	/* ... Start NAV Styles ... */
+	/* ... (your existing styles) ... */
+	/* ... About Section ... */
+
+	.second {
+        margin: 50px auto 0;
+        text-align: center;
+    }
+	.about-container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.me {
+		width: 60%;
+		/* Make the image take the full width */
+		height: auto;
+		/* Maintain aspect ratio */
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.me-info {
+		margin-top: 20px;
+		/* Add some space between image and text */
+		font-size: 20px;
+		/* Adjust font size for better readability on small screens */
+		width: 80%;
+		/* Take full width on small screens */
+		padding: 20px;
+		/* Adjust padding for better spacing */
+	}
+	/* ... End of About Section ... */
+	/* ... Skills Section ... */
+	.skills {
+		padding: 30px;
+		/* Adjust padding for better spacing on small screens */
+	}
+	.sk-txt {
+		font-size: 30px;
+		/* Adjust font size for better readability on small screens */
+		margin-bottom: 20px;
+		/* Adjust margin for better spacing on small screens */
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-top: 30px;
+	}
+	.skill-container {
+		background-color: white;
+		padding: 20px;
+		padding-top: 25px;
+		padding-bottom: 10px;
+		border-radius: 15px;
+		width: 80%;
+		/* Take full width on small screens */
+		box-sizing: border-box;
+		/* Ensure padding doesn't affect the width */
+	}
+	.html,.css,.js {
+		height: 100px;
+		/* Adjust height for better spacing on small screens */
+		width: 100px;
+		/* Adjust width for better spacing on small screens */
+		object-fit: contain;
+		margin-right: 20px;
+		/* Adjust margin for better spacing on small screens */
+	}
+	/* ... End of Skills Section ... */
+	/* ... Resume Section ... */
+	.resume {
+		margin-top: 20px;
+		/* Adjust margin for better spacing on small screens */
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		/* Adjust margin for better spacing on small screens */
+		text-align: center;
+	}
+	.res {
+		font-size: 25px;
+		/* Adjust font size for better readability on small screens */
+		color: #E63B3B;
+		text-align: center;
+		margin-bottom: 15px;
+		/* Adjust margin for better spacing on small screens */
+	}
+	.pls {
+		text-align: center;
+		font-size: 20px;
+		/* Adjust font size for better readability on small screens */
+		font-family: Consola;
+		margin-bottom: 15px;
+		/* Adjust margin for better spacing on small screens */
+	}
+	.btn-resume {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		text-align: center;
+		border-radius: 12px;
+		padding: 15px 50px;
+		/* Adjust padding for better spacing on small screens */
+		font-size: 20px;
+		/* Adjust font size for better readability on small screens */
+		background-color: rgb(230, 59, 59);
+		color: white;
+		border: none;
+		margin-top: 20px;
+		font-family: Consola;
+		transition-duration: 0.5s;
+	}
+	/* ... End of Resume Section ... */
+	/* ... (your existing styles) ... */
+	footer {
+		padding: 20px;
+	}
+}
+/* ... (your existing styles) ... */

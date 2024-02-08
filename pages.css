@@ -1,0 +1,415 @@
+/* Font Styles */
+
+@font-face {
+    font-family: Consola;
+    src: url(fonts/consola/consola.ttf);
+}
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #2D3230;
+}
+
+.navbar {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -2px 10px 5px #00000073;
+    font-family: 'Consola'; /* Add this line to apply the custom font */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+    margin-right: 152px;
+}
+
+img {
+    height: 90px;
+    margin-left: 120px;
+    margin-top: -8px;
+}
+
+.nav-list li:last-child a {
+    color: #E63B3B;
+}
+
+.nav-list li {
+    margin-top: 20px;
+    margin-left: 159px;
+    font-family: Consola;
+    font-weight: 500;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.nav-list li :hover {
+    color: #E63B3B;
+}
+
+.hamburger {
+    display: none;
+}
+
+.overlay {
+    display: none;
+}
+
+/* Button Styles */
+.btn-resume {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 12px;
+    padding: 22px 75px;
+    font-size: 30px;
+    background-color: rgb(230, 59, 59);
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-family: Consola;
+    transition-duration: 0.5s;
+}
+
+/* Projects Section Styles */
+.projects-section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    padding-bottom: 86px;
+    width: 80%;
+}
+
+h1 {
+    color: #E63B3B;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Consola';
+}
+
+.txt {
+    text-align: center;
+    font-family: 'Consola';
+}
+
+.dvlp {
+    margin-top: 84px;
+    margin-bottom: 20px;
+}
+
+.dsgn {
+    margin-top: 84px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.des-text, .des-text2 {
+    font-family: 'Consola';
+    font-size: 23px;
+    margin-top: 30px;
+}
+
+.img-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+.img-container2 {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    border-radius: 18px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.cake-mobile, .cake-desk {
+    height: 500px;
+    width: auto;
+    border: #2D3230 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.pkm-mobile, .pkm-desk{
+    height: 500px;
+    width: auto;
+    border: #2D3230 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.port-mobile, .port-desk{
+    height: 500px;
+    width: auto;
+    border: #2D3230 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-desk{
+    height: 500px;
+    width: auto;
+    border: #2D3230 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+.app-desk{
+    height: 450px;
+    width: auto;
+    border: 2px solid rgb(45, 50, 48);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.view-project {
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: rgb(230, 59, 59);
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-family: Consola;
+    transition-duration: 0.5s;
+    margin-top: 105px;
+    /* Center the button */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+
+.view-project:hover {
+
+    background-color: #ffffff;
+    color: #E63B3B;
+    cursor: pointer;
+
+
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #41A1CA;
+    padding: 30px;
+    font-family: 'Consola';
+}
+
+
+@media only screen and (max-width: 768px) {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body {  
+
+            height: 100vh;
+            margin: 0;
+            background-color: #0e0f0f;
+            background-image: none;
+        
+        }
+        
+	/* Navbar Styles */
+	.navbar {
+		flex-direction: row-reverse;
+		color: #fff;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		box-shadow: -2px 10px 5px #00000073;
+	}
+	.nav-list {
+		display: none;
+	}
+	img {
+		margin-left: 10px;
+		height: 70px;
+		width: auto;
+		margin-top: -15px;
+	}
+	.hamburger {
+		display: block;
+		font-size: 30px;
+		font-weight: bolder;
+		color: #ffffff;
+		float: right;
+		margin-right: 20px;
+	}
+	.nav-list li {
+		margin: 0;
+		font-family: Consola;
+		font-weight: 500;
+	}
+	.nav-list li a {
+		color: #fff;
+		padding: 15px;
+		display: block;
+		transition-duration: 0.5s;
+	}
+	.nav-list li a:hover {
+		color: #E63B3B;
+	}
+	.overlay {
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.9);
+		overflow-y: hidden;
+		justify-content: center;
+	}
+	
+.hamburger:hover{
+	cursor: pointer;
+}
+	.overlay-content {
+		text-align: center;
+		margin-top: 50px;
+	}
+	.overlay a {
+		padding: 8px;
+		text-decoration: none;
+		font-size: 36px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+		margin: 15px;
+	}
+	a:last-child {
+		color: #E63B3B;
+	}
+	.overlay a:hover,.overlay a:focus {
+		color: #f1f1f1;
+	}
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 60px;
+		color: #fff;
+		cursor: pointer;
+	}
+	/* End of Navbar Styles */
+
+h1{
+    text-align: center;
+}
+.projects-section{
+ 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.port-desk{
+   width:auto;
+   height: 180px;
+   margin-top: 30px;
+   overflow: hidden;
+}
+
+
+
+.port-desk,.port-mobile{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.pkm-desk{
+    width:auto;
+    height: 180px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.pkm-desk,.pkm-mobile{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.txt{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	footer {
+		padding: 20px;
+	}
+}
