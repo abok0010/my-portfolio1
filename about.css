@@ -166,6 +166,18 @@ img {
 	color: #E63B3B;
 	cursor: pointer;
 }
+
+.link{
+	text-decoration: none;
+	color: white;
+}
+
+.link:hover{
+	color: #E63B3B;
+	cursor: pointer;
+}
+
+
 footer {
 	background-color: #41A1CA;
 	padding: 30px;
@@ -376,13 +388,30 @@ footer {
 		/* Adjust padding for better spacing on small screens */
 		font-size: 20px;
 		/* Adjust font size for better readability on small screens */
-		background-color: rgb(230, 59, 59);
+	
 		color: white;
 		border: none;
 		margin-top: 20px;
 		font-family: Consola;
 		transition-duration: 0.5s;
 	}
+
+
+	.btn-resume:hover {
+		background-color: #ffffff;
+		color: #E63B3B;
+		cursor: pointer;
+	}
+	.btn-resume a {
+		text-decoration: none;
+		color: white;
+	}
+	
+	.btn-resume:hover a {
+		color: #E63B3B;
+	}
+	
+
 	/* ... End of Resume Section ... */
 	/* ... (your existing styles) ... */
 	footer {
